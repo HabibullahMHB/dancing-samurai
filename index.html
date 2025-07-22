@@ -1,1 +1,48 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+    <title>🤖 MY DANCING ROBOT! 🤖</title>
+    <style>
+        body { 
+            background: #c2e9fb; /* Sky blue! */
+            text-align: center;
+            font-family: 'Comic Sans MS', cursive;
+        }
+        #robot {
+            font-size: 120px; /* GIANT robot! */
+            transition: all 1s; /* Smooth moves */
+        }
+        button {
+            background: #4CAF50; /* Shiny green */
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+            border: none;
+            border-radius: 50px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>✨ ROBOT DANCE PARTY! ✨</h1>
+    
+    <!-- Our dancing robot emoji! -->
+    <div id="robot">🤖</div>
+    
+    <!-- Dance button -->
+    <button onclick="makeRobotDance()">DANCE TIME!</button>
+    
+    <script>
+    function makeRobotDance() {
+        const robot = document.getElementById("robot");
+        // Make robot spin AND grow!
+        robot.style.transform = "rotate(360deg) scale(1.5)";
+        
+        // Reset after dance
+        setTimeout(() => {
+            robot.style.transform = "rotate(0) scale(1)";
+        }, 1000);
+    }
+    </script>
+</body>
+</html>
